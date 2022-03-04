@@ -127,10 +127,12 @@ int main()
     mainMons[0] = new Mon("Fire Dino", "fire", 200, mainMoves);
     mainMons[1] = new Mon("Water Turtle", "water", 200, mainMoves);
     mainMons[2] = new Mon("Grass Dog", "grass", 200, mainMoves);
+	
+	cout << endl;
 
     int choice;
 
-    choice = getInt("\nChoose a Gamemode (1 - Singleplayer, 2 - Multiplayer, 3 - Simulation): ", 1, 3);
+    choice = getInt("Choose a Gamemode (1 - Singleplayer, 2 - Multiplayer, 3 - Simulation): ", 1, 3);
     cout << endl;
 
     // run function depending on choice
