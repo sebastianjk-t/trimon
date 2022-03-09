@@ -3,6 +3,17 @@
 Our project simulates a turn-based battle between two creatures (mons), taking inspiration from Pokemon. The computer randomly selects a mon, then the user selects theirs. Players take turns, with the user going first, selecting moves which either inflict damage to the opponent or heal the user of the move. The battle is fought until either mon reaches 0 health, and the surviving mon wins, or the player chooses to exit. Additional multiplayer and simulation game modes have been added, allowing for PvP and CvC games which run as described above.
 
 There are three mons to choose from, named ‘Fire Dino’, ‘Water Turtle’ and ‘Grass Dog’, each corresponding to one of three types: fire, water and grass. The damage dealt by offensive moves is dependent on the types of the attacking and defending mon, similar to the rock, paper, scissors configuration in Pokemon, where fire-type mons do more damage to grass and less to water, etc. The computer mon also has a ‘nature’ which dictates its move choices, with ‘neutral’ choosing a random move, ‘hostile’ the strongest, and ‘passive’ the weakest or a healing move. Furthermore moves have ‘PP’, a number indicating the amount of times a move can be used, which decreases after every use. If the computer can no longer choose the move(s) corresponding to its nature, it will become neutral, and if it uses all PP, it will give up.
+
+## Installation
+The program can be compiled and run with the below command.
+```bash
+make
+```
+Alternatively, the following command can be used to only compile it.
+```bash
+make compile
+```
+
 ## Design Description
 ### Assessment Concepts
 Memory allocation from stack and the heap:
